@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BSc Laboratory Technology Department</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+    header, footer { background-color: #004080; color: white; padding: 10px; text-align: center; }
+    nav a { margin: 0 10px; color: #004080; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { margin-top: 30px; }
+    h2 { border-bottom: 2px solid #004080; padding-bottom: 5px; }
+    .course-list ul { columns: 2; }
+    .form-section form { display: flex; flex-direction: column; max-width: 400px; }
+    .form-section input, .form-section textarea, .form-section select { margin-bottom: 10px; padding: 8px; }
+    .form-section button { background-color: #004080; color: white; border: none; padding: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BSc Laboratory Technology Department</h1>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#slides">Course Slides & Past Questions</a>
+      <a href="#vote">Vote</a>
+      <a href="#handbook">Handbook</a>
+      <a href="#books">Books</a>
+      <a href="#complaints">Complaints</a>
+    </nav>
+  </header>
+
+  <section id="courses" class="course-list">
+    <h2>Courses by Semester</h2>
+    <p>Click to see the four-year course list by semester.</p>
+    <details>
+      <summary>Year 1</summary>
+      <ul>
+        <li>Semester 1: Introduction to Laboratory Science, General Chemistry</li>
+        <li>Semester 2: Organic Chemistry, Biology Basics</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Year 2</summary>
+      <ul>
+        <li>Semester 1: Microbiology, Hematology</li>
+        <li>Semester 2: Biochemistry, Immunology</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Year 3</summary>
+      <ul>
+        <li>Semester 1: Medical Parasitology, Pathology</li>
+        <li>Semester 2: Clinical Chemistry, Blood Banking</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Year 4</summary>
+      <ul>
+        <li>Semester 1: Research Methods, Internship Preparation</li>
+        <li>Semester 2: Internship, Project Presentation</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="slides">
+    <h2>Course Slides & Past Questions</h2>
+    <p>Access your <a href="https://example.com/slides" target="_blank">course slides and past questions here</a>.</p>
+    <small>(You can replace the link with the actual uploaded files or cloud links.)</small>
+  </section>
+
+  <section id="vote" class="form-section">
+    <h2>Cast Your Vote for Student Leadership</h2>
+    <form onsubmit="alert('Vote submitted! Thank you for participating.'); return false;">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required />
+      
+      <label for="candidate">Choose your candidate:</label>
+      <select id="candidate" required>
+        <option value="">Select</option>
+        <option value="candidate1">Candidate 1 - Sarah</option>
+        <option value="candidate2">Candidate 2 - James</option>
+        <option value="candidate3">Candidate 3 - Linda</option>
+      </select>
+      
+      <button type="submit">Submit Vote</button>
+    </form>
+    <small>(Note: This is a basic demo form. Real voting requires backend handling.)</small>
+  </section>
+
+  <section id="handbook">
+    <h2>Department Handbook</h2>
+    <p>Find the <a href="https://example.com/handbook.pdf" target="_blank">handbook PDF here</a> with all details about the course, HOD, and leadership.</p>
+  </section>
+
+  <section id="books">
+    <h2>Recommended Books</h2>
+    <ul>
+      <li>Clinical Laboratory Science by Mary Louise Turgeon</li>
+      <li>Basic and Clinical Laboratory Techniques by Susan King Strasinger</li>
+      <li>Medical Microbiology by Patrick R. Murray</li>
+    </ul>
+  </section>
+
+  <section id="complaints" class="form-section">
+    <h2>Submit Complaints or Suggestions</h2>
+    <form onsubmit="alert('Your complaint/suggestion has been submitted. We will review it shortly.'); return false;">
+      <label for="complaint-name">Your Name:</label>
+      <input type="text" id="complaint-name" required />
+      
+      <label for="complaint-text">Complaint or Suggestion:</label>
+      <textarea id="complaint-text" rows="4" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 BSc Laboratory Technology Department</p>
+  </footer>
+
+</body>
+  </html>
+        
